@@ -28,6 +28,59 @@ body{
 
 
 /* background lines */
+.bg-lines span{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background:rgba(255, 255, 255, 0.05);
+    width: 1px;
+    -webkit-animation: left_Right 10s  infinite;
+    animation: left_Right 10s  infinite;
+}
+.bg-lines span:nth-child(1){
+    left:10%
+}
+.bg-lines span:nth-child(2){
+    left:20%
+}
+.bg-lines span:nth-child(3){
+    left:30%
+}
+.bg-lines span:nth-child(4){
+    left:40%
+}
+.bg-lines span:nth-child(5){
+    left:50%
+}
+.bg-lines span:nth-child(6){
+    left:60%
+}
+.bg-lines span:nth-child(7){
+    left:70%
+}
+.bg-lines span:nth-child(8){
+    left:80%
+}
+.bg-lines span:nth-child(9){
+    left:90%
+}
+@keyframes left_Right {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50%{
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
 /* start header */
 header{
     position: fixed;
@@ -70,5 +123,15 @@ header nav a{
     transition: 0.3s;
 }
 header nav a:hover{
+
    scale: 1.4;
+}
+header nav .icons .fa-facebook:hover{
+color:#649ee9;
+}
+header nav .icons .fa-twitter:hover{
+color: #2703b8;
+}
+header nav .icons .fa-instagram:hover{
+color: #C13584;
 }
