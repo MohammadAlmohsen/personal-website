@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +25,9 @@ body {
   width: 80%;
   margin: auto;
   max-width: 1500px;
+}
+section{
+  padding:80px 0;
 }
 img {
   width: 100%;
@@ -136,6 +142,13 @@ header {
   left: 0;
   right: 0;
   height: 100px;
+  transition: 0.3s;
+  z-index: 1;
+}
+header.active {
+  background-color: var(--black_color);
+  border-bottom: 1px solid var(--border_color);
+  
 }
 header nav {
   display: flex;
@@ -185,6 +198,10 @@ header nav .icons .fa-instagram:hover {
 /* start hero section */
 .hero {
   padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero .container {
@@ -244,3 +261,60 @@ header nav .icons .fa-instagram:hover {
   margin-left: 30px; /* يثبت الصورة على اليسار داخل الصندوق */
 }
 
+/* start about */
+.about .container{
+  background-color: var(--black_color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.about .div-text{
+  width: 50%;
+}
+
+.about .div-text h5{
+  color: var(--p_color);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.about .div-text h2{
+  font-size: 45px;
+  margin: 25px 0 5px;
+}
+
+.about .div-text h4{
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+.about .div-text p{
+  line-height: 1.8;
+}
+
+.about .div-text ul{
+  display: flex;
+  color: var(--white_color);
+  margin:30px 0 20px;
+  flex-wrap: wrap;
+}
+.about .div-text ul li{
+  width:45%;
+  margin-bottom: 30px;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.about .div-text ul li i{
+  color: var(--main_color);
+}
+
+
+.about .div_img{
+  width: 35%;
+  position: relative;
+}
