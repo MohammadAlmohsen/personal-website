@@ -83,6 +83,15 @@ p {
 }
 
 /* background lines */
+
+.top_section{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.top_section h2{
+  font-size: 30px;
+}
+
 .bg-lines span {
   position: fixed;
   top: 0;
@@ -147,7 +156,7 @@ header {
 }
 header.active {
   background-color: var(--black_color);
-  border-bottom: 1px solid var(--border_color);
+  border-bottom: 1px solid #544949;
   
 }
 header nav {
@@ -318,3 +327,43 @@ margin-bottom: 20px;
   width: 35%;
   position: relative;
 }
+/* end about section */
+
+/* start services section */
+
+.servises .boxs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.servises .boxs .box{
+  width: 30%;
+  text-align: center;
+  padding: 50px 20px;
+  border: 1px solid var(--border_color);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.servises .boxs .box i{
+  color: var(--main_color);
+  font-size: 70px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.servises .boxs .box h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.servises .boxs .box p{
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.servises .boxs .box:hover{
+  border-color: var(--main_color);
+  background-color: #2e2160;
+}
+.servises .boxs .box:hover i{
+  scale: 1.2;
+}
+/* end services section */
